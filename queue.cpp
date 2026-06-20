@@ -8,3 +8,7 @@ void initQueue(Queue* q) {
 	q->head = nullptr;
 	q->tail = nullptr;
 }
+
+bool isEmpty(const Queue* q) {
+	return q->head == nullptr;
+}

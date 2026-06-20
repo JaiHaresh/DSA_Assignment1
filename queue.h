@@ -26,5 +26,6 @@ struct Queue {
 };
 
 void initQueue(Queue* q);
+bool isEmpty(const Queue* q);
 
 #endif
