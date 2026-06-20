@@ -30,4 +30,8 @@ bool isEmpty(const Queue* q);
 void enqueue(Queue* q, const User& user);
 User dequeue(Queue* q);
 
+int addRandomUsers(Queue* q, int count);
+
+std::string factionToString(Faction f);
+
 #endif
