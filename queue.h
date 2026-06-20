@@ -27,5 +27,6 @@ struct Queue {
 
 void initQueue(Queue* q);
 bool isEmpty(const Queue* q);
+void enqueue(Queue* q, const User& user);
 
 #endif
