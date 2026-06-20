@@ -27,3 +27,22 @@ void enqueue(Queue* q, const User& user) {
 		q->tail = newNode;
 	}
 }
+
+User dequeue(Queue* q) {
+	if (isEmpty(q)) {
+		std::cerr << "Error: Attempted to dequeue from an empty queue" << std::endl;
+		exit(EXIT_FAILURE);
+	}
+
+	QueueNode* temp = q->head;
+	User userData = temp->data;
+
+	q->head = q->head->next;
+
+	if (q->head == nullptr) {
+		q->tail = nullptr;
+	}
+
+	delete temp;
+	return userData;
+}
